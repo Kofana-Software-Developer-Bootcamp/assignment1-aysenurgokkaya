@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="https://patika-prod.s3.eu-central-1.amazonaws.com/staticFiles/favicon.png?v1" sizes="16x16 32x32 64x64">
+  <title>Patika Bootcamp Katılım Formu</title>
+  <link rel="stylesheet" href="main.css">
+  <script defer src="main.js"></script>
+  </head>
+<body> 
+ 
+<div  >
+  <form id="form" >
+      <div style="text-align:center"  >
+      <img class="title-img" src="https://lh5.googleusercontent.com/YUPYUIUR_80fcLI9Av5DaNGIS6XpcoVRr9cz8EMPVfS_oMUZQ41FwOdMEHBLMxRPOGQJbcQq68Ix4wuPc6fQmy3-t6v8szix8Ar3ajgEZEEglrSFP4zTRXXPHgJp8lCQyg=w800">
+      <h1 >Patika Bootcamp Katılım Formu</h1>
+    </div>
+  <form action="/action_page.html">
+
+    <label for="name">İsim-Soyisim</label>
+    <input type="text" autocomplete="off" id="name" name="name" placeholder="Yanıtınız">
+
+    <label for="email">E-posta </label>
+    <input type="email" autocomplete="off" id="email" name="email" placeholder="E-posta adresiniz">
+
+    <label for="phoneNumber">Telefon</label>
+    <input type="tel" autocomplete="off" id="phoneNumber" phoneNumber="phoneNumber" placeholder="5xxxxxxxxx">
+
+    <label for="birthDate">Doğum Tarihi</label>
+    <input type="date" autocomplete="off" id="birthDate" name="birthDate" placeholder="Yanıtınız">
+
+    <label for="gender">Cinsiyet</label>
+    <select id="gender" name="gender">
+      <option>Seçin</option>
+      <option value="female">Kadın</option>
+      <option value="male">Erkek</option>
+      <option value="other">Diğer</option>
+    </select>
+
+    <label for="resume">Özgeçmiş</label>
+    <input type="file" id="resume" name="resume"><br><br>
+
+    <label for="linkedln">Linkedln hesabınızın linki </label>
+    <input type="url" autocomplete="off" id="linkedln" name="linkedln" placeholder="Yanıtınız">
+
+    <label for="github">GitHub hesabınızın linki </label>
+    <input type="url" autocomplete="off" id="github" name="github" placeholder="Yanıtınız">
+    
+    <label for="Patika">Patika hesabınızın linki </label>
+    <input type="url" autocomplete="off" id="patika" name="patika" placeholder="Yanıtınız">
+    <label for="coverLetter">Ön Yazı</label>
+    <textarea id="coverLetter" name="coverLetter" placeholder="Yanıtınız" style="height:200px"></textarea>
+   
+    <input type="button" onclick="save()" value="Submit" >
+  
+   
+  </form>
+</div>
+
+</body>
+</html>
+
